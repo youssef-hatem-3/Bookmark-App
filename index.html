@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+    <body>
+        <div class=" headerSection  mx-auto  w-75 h-25 d-flex align-items-center ">
+            <h3 class="ml-3 ">Bookmarker</h3>
+        </div>
+        <div class=" form-section w-75 mx-auto my-3 py-5">
+            <div class=" text-center p-4 w-100 ">
+                <h4 class="font-weight-bolder" >Bookmark your favorite sites</h4>
+            </div>
+            <!--input bta3 el-Name-->
+            <label for="siteNameInput" class="text-center w-100">Site name</label>
+            <input type="text"  placeholder="Example" class="form-control mb-3 w-75 mx-auto"  id="siteNameInput">
+            <!--noteAlertName-->
+            <div id="noteAlertName" class="form-control w-75 mx-auto my-2 alert-danger text-center d-none">
+                <h4 class="font-weight-bolder " >Name is requierd </h4>
+            </div>
+            <!--noteAlertUrlExisting-->
+            <div id="noteAlertUrlExisting" class="form-control w-75 mx-auto my-2 alert-danger text-center d-none ">
+                <h4 class="font-weight-bolder " >This URL is already exist</h4>
+            </div>
+            <!--input bta3 el-URL -->
+            <label for="siteUrlInput" class="text-center w-100">Site URL</label>
+            <input type="text" placeholder="www.example.com" class="form-control mb-3 w-75 mx-auto" id="siteUrlInput" oninput="validationUrl()">
+             <!--noteALertUrl-->
+             <div id="noteALertUrl" class="form-control w-75 mx-auto my-2 alert-danger text-center d-none">
+                <h4 class="font-weight-bolder " >URL is requierd correct</h4>
+            </div>
+            <!--elButton bta3 el-Submit-->
+            <div class="btnSection d-flex justify-content-center w-100">
+                <button id="addBtn" class="btn submitBtn">Submit</button>
+            </div>
+        </div>
+        <!--Elsection bta3 el-table-->
+        <div id="content"></div>
+        <footer>
+            <div class="container">
+                <p>© 2019 Bookmarker Inc.</p>
+            </div>
+        </footer>    
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
